@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" type="A quiz about the original Alien movie" />
+    <title>Alien Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+<body>
+  <header role="heading">
+    <h1>Alien Movie Quiz</h1>
+    <div class="main-image" role="image"></div>
+  </header>
+  <main role="main">
+    <section class="status-bar">
+      <ul>
+        <li class="current-status">Question:
+          <span class="question-number">0</span>/5</li>
+        <li class="current-status">Score:
+          <span class="score">0</span>
+        </li>
+      </ul>
+    </section>
+    <section class="start-quiz">
+      <h2>How much do you know about the movie <span>Alien</span>?</h2>
+    </section>
+    <form method="post" class="quiz-form">
+      <fieldset>
+        <legend class="current-question">Current question?</legend>
+        <ul>
+          <li class="quiz-option">
+            <input type="radio" id="option-one" name="selected-answer" />
+            <label for="option-one">Option One</label>
+          </li>
+          <li class="quiz-option">
+            <input type="radio" id="option-two" name="selected-answer" />
+            <label for="option-two">Option Two</label>
+          </li>
+          <li class="quiz-option">
+            <input type="radio" id="option-three" name="selected-answer" />
+            <label for="option-three">Option Three</label>
+          </li>
+          <li class="quiz-option">
+            <input type="radio" id="option-four" name="selected-answer" />
+            <label for="option-four">Option Four</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="submission">
+        <button type="submit" class="submit-button">Start Quiz</button>
+      </div>
+    </form>
+    <section class="correct-answer">
+      <h2>Correct!</h2>
+      <div class="correct-image" role="image"></div>
+      <p class="feedback">You're doing great!  This knowledge might save you in space!</p>
+      <button class="continue-button">Next question</button>
+    </section>
+    <section class="wrong-answer">
+      <h2>Oh no!  Incorrect!</h2>
+      <div class="wrong-image" role="image"></div>
+      <p class="feedback">The correct answer was:</p>
+      <p class="display-correct-answer"></p>
+      <button class="continue-button">Next question</button>
+    </section>
+    <section class="final-review">
+      <h2>Here's how you did</h2>
+      <p class="final-status">Final Score: <span class="score">0</span></p>
+      <p>Want to try again?</p>
+      <button type="reset" class="reset-button">Restart Quiz</button>
+    </section>
+  </main>
+  <script>
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

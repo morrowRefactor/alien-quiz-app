@@ -58,9 +58,3 @@ legend {
 .submission {
     text-align: center;
 }
-
-.correct-answer,
-.wrong-answer,
-.final-review {
-    display: none;
-}

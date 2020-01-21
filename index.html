@@ -10,80 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
 </head>
-<body>
+<body></body>
+  <section class="container">
   <header role="heading">
     <h1>Alien Movie Quiz</h1>
-    <div class="main-image" role="image"></div>
+    <img class="main-image" role="image" src="https://m.media-amazon.com/images/M/MV5BMTg4NjEwMzg0OF5BMl5BanBnXkFtZTcwNjM2NTUyMw@@._V1_SY1000_CR0,0,734,1000_AL_.jpg" alt="Alien movie poster"></img>
+    <div class="status-bar">Question: <span class="question-number">0</span>/5  |  Score: <span class="score">0</span></div>
   </header>
   <main role="main">
-    <section class="status-bar">
-      <ul>
-       <li class="current-status">Question:
-          <span class="question-number">0</span>/5</li>
-        <li class="current-status">Score:
-          <span class="score">0</span>
-        </li>
-      </ul>
-    </section>
-<!-- this section is for when the quiz starts. it's the opening page and will be hidden via jquery once the start button is clicked -->
     <section class="start-quiz">
       <h2>How much do you know about the movie <span>Alien</span>?</h2>
       <div class="correct-image" role="image"></div>
-      <p class="feedback">You're doing great!  This knowledge might save you in space!</p>
-      <button class="start-button">Start quiz</button>
+      <p class="feedback">Let's test how much you know about the classic movie <i>Alien</i> to see how you might do in space when you'e inevitably pitted against a xenomorph.</p>
+      <button class="start-button" type="button">Start quiz</button>
     </section>
- <!-- this section is the main form and will be populated with each question by jquery -->
-    <section class="quiz-block">
-      <h2>How much do you know about the movie <span>Alien</span>?</h2>
-      <form method="post" class="quiz-form">
-        <fieldset>
-          <legend class="current-question">Current question?</legend>
-          <ul>
-            <li class="quiz-option">
-              <input type="radio" id="option-one" name="selected-answer" />
-              <label for="option-one">Option One</label>
-            </li>
-            <li class="quiz-option">
-              <input type="radio" id="option-two" name="selected-answer" />
-              <label for="option-two">Option Two</label>
-            </li>
-            <li class="quiz-option">
-              <input type="radio" id="option-three" name="selected-answer" />
-              <label for="option-three">Option Three</label>
-            </li>
-            <li class="quiz-option">
-              <input type="radio" id="option-four" name="selected-answer" />
-              <label for="option-four">Option Four</label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="submission">
-          <button type="submit" class="submit-button">Start Quiz</button>
-        </div>
-      </form>
-    </section>
-<!-- this is the placeholder section for correct answers. the content will be populated by jquery -->
-    <section class="correct-answer">
-      <h2>Correct!</h2>
-      <div class="correct-image" role="image"></div>
-      <p class="feedback">You're doing great!  This knowledge might save you in space!</p>
-      <button class="continue-button">Next question</button>
-    </section>
-<!-- this is the placeholder section for wrong answers. the content will be populated by jquery and will provide the correct answer -->
-    <section class="wrong-answer">
-      <h2>Oh no!  Incorrect!</h2>
-      <div class="wrong-image" role="image"></div>
-      <p class="feedback">The correct answer was:</p>
-      <p class="display-correct-answer"></p>
-      <button class="continue-button">Next question</button>
-    </section>
-<!-- this is the placeholder section for the final review. it will display the final score and a button to reset the quiz -->
-    <section class="final-review">
-      <h2>Here's how you did</h2>
-      <p class="final-status">Final Score: <span class="score">0</span></p>
-      <p>Want to try again?</p>
-      <button type="reset" class="reset-button">Restart Quiz</button>
-    </section>
+    <section class="quiz-block"></section>
+    <section class="answer-response"></section>
+    <section class="final-review"></section>
 </main>
+</section>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
